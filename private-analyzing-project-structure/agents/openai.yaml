@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Project Structure"
+  short_description: "Map repository structure, flow, and intent"
+  default_prompt: "Use $private-analyzing-project-structure to explain this repository's structure, execution flow, and likely architectural intent."

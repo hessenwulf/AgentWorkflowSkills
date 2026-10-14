@@ -1,0 +1,20 @@
+# Copy this file to <repo-root>/.agents/workflow-profile.yaml and adapt values per repository.
+workflow_name: "todo-board-default"
+
+paths:
+  todo_file: "docs/TODO.md"
+  todo_archive_file: "docs/TODO-archive.md"
+  implementation_plan_glob: "docs/planning/implementation/todo-specific-plans/TODO-<id>-*.md"
+  implementation_archive_dir: "docs/planning/implementation/archive"
+  design_dirs:
+    - "docs/planning/design/todo-specific"
+    - "docs/planning/design/general"
+  handsoff_file: "docs/handsoff.md"
+
+git:
+  base_branch: "master"
+
+rules:
+  completed_limit: 10
+  require_current_date_for_status: true
+  markdown_language: "de"
